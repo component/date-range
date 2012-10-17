@@ -29,6 +29,10 @@
 
   Return JSON representation.
 
+### DateRange#equals(other:DateRange)
+
+  Check if this range is identical to `other`.
+
 ### DateRange#toString()
 
   Return string representation.
