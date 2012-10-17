@@ -1,0 +1,8 @@
+{
+  "name": "date-range",
+  "version": "0.0.1",
+  "devDependencies": {
+    "mocha": "*",
+    "better-assert": "*"
+  }
+}

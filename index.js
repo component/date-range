@@ -7,11 +7,13 @@ function DateRange(from, to) {
 }
 
 DateRange.prototype.from = function(date){
+  if (0 == arguments.length) return this._from;
   this._from = date;
   this.normalize();
 };
 
 DateRange.prototype.to = function(date){
+  if (0 == arguments.length) return this._to;
   this._to = date;
   this.normalize();
 };
