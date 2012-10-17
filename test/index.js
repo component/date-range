@@ -19,6 +19,17 @@ describe('DateRange(from, to)', function(){
     assert(future == range.to());
   })
 
+  it('should be optional', function(){
+    var range = new DateRange;
+    assert(null == range.to());
+    assert(null == range.from());
+
+    range.from(now);
+    range.to(future);
+    assert(now == range.from());
+    assert(future == range.to());
+  })
+
   describe('when reversed', function(){
     it('should normalize the range', function(){
       var range = new DateRange(future, now);
