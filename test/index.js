@@ -39,6 +39,24 @@ describe('DateRange(from, to)', function(){
   })
 })
 
+describe('DateRange#equals(other)', function(){
+  describe('when identical', function(){
+    it('should be true', function(){
+      var a = new DateRange(now, future);
+      var b = new DateRange(now, future);
+      assert(true === a.equals(b));
+    })
+  })
+
+  describe('when different', function(){
+    it('should be false', function(){
+      var a = new DateRange(now, new Date(5000));
+      var b = new DateRange(now, future);
+      assert(false === a.equals(b));
+    })
+  })
+})
+
 describe('DateRange#diff()', function(){
   it('should return diff in milliseconds', function(){
     var range = new DateRange(now, future);

@@ -86,6 +86,12 @@ DateRange.prototype.toJSON = function(){
   };
 };
 
+DateRange.prototype.equals = function(other){
+  if (!(other instanceof DateRange)) throw new TypeError('other must be a DateRange');
+  return this._from == other._from
+    && this._to == other._to;
+};
+
 /**
  * Return string representation.
  *
