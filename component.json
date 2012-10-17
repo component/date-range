@@ -1,0 +1,12 @@
+{
+  "name": "date-range",
+  "repo": "component/date-range",
+  "description": "DateRange component",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "scripts": [
+    "index.js"
+  ]
+}
