@@ -34,6 +34,6 @@ DateRange.prototype.toJSON = function(){
 };
 
 DateRange.prototype.toString = function(){
-  return '[DateRange\n  ' + this._from + '\n  ' + this._to + ']';
+  return '[DateRange ' + this._from + ' => ' + this._to + ']';
 };
 

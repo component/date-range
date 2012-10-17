@@ -20,3 +20,20 @@ describe('DateRange(from, to)', function(){
     })
   })
 })
+
+describe('DateRange#toJSON()', function(){
+  it('should return a json representation', function(){
+    var range = new DateRange(future, now);
+    var json = JSON.stringify(range);
+    var obj = JSON.parse(json);
+    assert(obj.from);
+    assert(obj.to);
+  })
+})
+
+describe('DateRange#toString()', function(){
+  it('should return a string representation', function(){
+    var range = new DateRange(future, now);
+    assert(~range.toString().indexOf('[DateRange'));
+  })
+})
