@@ -13,6 +13,12 @@ describe('DateRange(from, to)', function(){
     assert(future == range.to());
   })
 
+  it('should work without new', function(){
+    var range = DateRange(now, future);
+    assert(now == range.from());
+    assert(future == range.to());
+  })
+
   describe('when reversed', function(){
     it('should normalize the range', function(){
       var range = new DateRange(future, now);

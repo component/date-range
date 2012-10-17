@@ -14,6 +14,7 @@ module.exports = DateRange;
  */
 
 function DateRange(from, to) {
+  if (!(this instanceof DateRange)) return new DateRange(from, to);
   if (from) this.from(from);
   if (to) this.to(to);
 }
@@ -95,4 +96,3 @@ DateRange.prototype.toJSON = function(){
 DateRange.prototype.toString = function(){
   return '[DateRange ' + this._from + ' => ' + this._to + ']';
 };
-
