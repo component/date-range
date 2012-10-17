@@ -3,7 +3,7 @@
   "repo": "component/date-range",
   "description": "DateRange component",
   "version": "0.0.1",
-  "keywords": [],
+  "keywords": ["date", "range", "utility"],
   "dependencies": {},
   "development": {},
   "scripts": [
