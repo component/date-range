@@ -26,6 +26,10 @@ DateRange.prototype.normalize = function(){
   } 
 };
 
+DateRange.prototype.diff = function(){
+  return this._to - this._from;
+};
+
 DateRange.prototype.toJSON = function(){
   return {
     from: this._from,

@@ -2,8 +2,9 @@
 var DateRange = require('..')
   , assert = require('better-assert');
 
+var min = 60000;
 var now = new Date;
-var future = new Date(Date.now() + (60000 * 5));
+var future = new Date(Date.now() + (min * 5));
 
 describe('DateRange(from, to)', function(){
   it('should initialize the range', function(){
@@ -18,6 +19,13 @@ describe('DateRange(from, to)', function(){
       assert(now == range.from());
       assert(future == range.to());
     })
+  })
+})
+
+describe('DateRange#diff()', function(){
+  it('should return diff in milliseconds', function(){
+    var range = new DateRange(now, future);
+    assert((min * 5) == range.diff());
   })
 })
 
