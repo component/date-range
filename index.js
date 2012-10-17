@@ -8,8 +8,8 @@ module.exports = DateRange;
 /**
  * Initialize a new DateRange `from` one date `to` another.
  *
- * @param {Date} from
- * @param {Date} to
+ * @param {Date} [from]
+ * @param {Date} [to]
  * @api public
  */
 
@@ -22,7 +22,7 @@ function DateRange(from, to) {
 /**
  * Set / get from `date`.
  *
- * @param {Date} date
+ * @param {Date} [date]
  * @return {Date}
  * @api public
  */
@@ -36,7 +36,7 @@ DateRange.prototype.from = function(date){
 /**
  * Set / get to `date`.
  *
- * @param {Date} date
+ * @param {Date} [date]
  * @return {Date}
  * @api public
  */
