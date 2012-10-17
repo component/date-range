@@ -13,11 +13,11 @@
 
   Initialize a new DateRange `from` one date `to` another.
 
-### DateRange#from(date:Date)
+### DateRange#from([date]:Date)
 
   Set / get from `date`.
 
-### DateRange#to(date:Date)
+### DateRange#to([date]:Date)
 
   Set / get to `date`.
 
