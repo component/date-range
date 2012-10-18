@@ -6,7 +6,7 @@
 var DateRange = require('./');
 
 var now = new Date;
-var future = new Date(Date.now() + (60000 * 5));
+var future = new Date(Date.now() + 60000 * 5);
 
 console.log();
 console.log(JSON.stringify(new DateRange(now, future), null, 2));

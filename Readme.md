@@ -7,11 +7,23 @@
 
     $ component install component/date-range
 
+## Example
+
+```js
+var DateRange = require('./');
+
+var now = new Date;
+var future = new Date(Date.now() + 60000 * 5);
+var range = new DateRange(now, future);
+```
+
 ## API
 
 ### DateRange()
 
-  Initialize a new DateRange `from` one date `to` another.
+  Initialize a new DateRange `from` one date `to` another. If
+  one date is larger than the other they are normalized so that `.from()`
+  is always the smallest date.
 
 ### DateRange#from([date]:Date)
 
