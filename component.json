@@ -3,10 +3,15 @@
   "repo": "component/date-range",
   "description": "DateRange component",
   "version": "0.0.1",
-  "keywords": ["date", "range", "utility"],
+  "keywords": [
+    "date",
+    "range",
+    "utility"
+  ],
   "dependencies": {},
   "development": {},
   "scripts": [
     "index.js"
-  ]
+  ],
+  "license": "MIT"
 }
